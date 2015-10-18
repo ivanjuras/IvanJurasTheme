@@ -1,0 +1,34 @@
+
+// ---------- SearchForm ---------- //
+
+.SearchForm {
+
+	display: block;
+	position: relative;
+
+}
+
+.SearchForm-field {
+
+	width: 100%;
+	outline: 0;
+	background: transparent;
+	border: 1px solid palette( gray, light );
+	padding: rem(5px) rem(5px) rem(5px) rem(10px);
+
+}
+
+.SearchForm-submit {
+	
+	position: absolute;
+	right: rem(5px);
+	top: rem(5px);
+	background: transparent;
+	border: 0;
+	outline: 0;
+
+	i {
+		color: palette( gray, light );
+	}
+
+}

@@ -1,0 +1,33 @@
+{% extends 'core-template.twig' %}
+
+
+{# ---------- Content block ---------- #}
+
+{% block content %}
+
+<div class="Wrapper Wrapper--M u-sm-noSidePaddings">
+	<div class="Row--b">
+
+		<div class="Column--8">
+
+			<section class="ContentBox">
+				<h1 class="ContentBox-title">{{ post.title }}</h1>
+				<article class="ContentBox-content">
+					{{ post.content }}
+				</article>
+			</section>
+
+		</div>
+
+		<div class="Column--4">
+			
+			<div class="SidebarBox">
+				{% include 'snippet-SearchForm.twig' %}
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+{% endblock %}

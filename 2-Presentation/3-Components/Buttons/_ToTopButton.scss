@@ -1,0 +1,35 @@
+
+// ---------- To top button ---------- //
+
+.ToTopButton {
+
+	display: none;
+	position: fixed;
+	bottom: rem(20px);
+	right: rem(20px);
+	background: inherit;
+	border: 1px solid palette( grey );
+
+	&:hover {
+		background: palette( grey, dark );
+	}
+
+	.fa-chevron-up {
+
+		font-size: rem(14px);
+		padding: rem(10px) rem(15px);
+		color: palette( grey );
+
+		&:hover {
+			color: palette( white );
+		}
+
+	}
+
+	@include lgScreens() {
+		position: fixed;
+		bottom: rem(40px);
+		right: rem(40px);
+	}
+
+}

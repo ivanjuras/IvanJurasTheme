@@ -1,0 +1,41 @@
+{% extends 'core-template.twig' %}
+
+
+{# ---------- Content block ---------- #}
+
+{% block content %}
+
+{# Hero section #}
+<div class="Wrapper Wrapper--M">
+	<div class="Row--c">
+
+		<div class="Column--12">
+
+			<div class="ContentBox">
+				<section class="HomeHero">
+					<h1 class="HomeHero-headline" style="font-weight: 300">
+						{{ post.get_field('home_headline') }}
+					</h1>
+					<div class="HomeHero-photo">
+						<img src="{{ TimberImage( post.get_field('home_photo') ).src }}">
+					</div>
+					<div class="HomeHero-text">
+						{{ post.get_field('home_text') }} 
+					</div>
+					<div class="HomeHero-cta u-centerText">
+						<div class="Button Button--M {{ post.get_field('home_button_color') }}">
+							<a href="{{ post.get_field('home_button_link') }}">
+								{{ post.get_field('home_button_text') }} 
+								<i class="fa fa-caret-right"></i>
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+{% endblock %}

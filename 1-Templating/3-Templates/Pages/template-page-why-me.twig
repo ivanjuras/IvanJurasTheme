@@ -1,0 +1,34 @@
+{% extends 'core-template.twig' %}
+
+
+{# ---------- Content block ---------- #}
+
+{% block content %}
+
+{# Hero section #}
+<div class="Wrapper Wrapper--M u-sm-noSidePaddings">
+	<div class="Row--c">
+
+		<div class="Column--12">
+
+			<section class="ContentBox">
+				<h1 class="ContentBox-title">{{ post.title }}</h1>
+				<article class="ContentBox-content">
+					{{ post.content }}
+				</article>
+				<div class="ContentBox-cta u-centerText u-biggerTopBotPaddings">
+					<div class="Button Button--M Button--warning">
+						<a href="/hire-me">
+							Hire me now
+							<i class="fa fa-caret-right"></i>
+						</a>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+	</div>
+</div>
+
+{% endblock %}

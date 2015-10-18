@@ -1,0 +1,84 @@
+
+// ---------- StandardCard ---------- //
+
+// Base
+.StandardCard {
+
+	@include outer-container();
+
+}
+
+// Content
+.StandardCard-content {
+
+	@include span-columns(4);
+
+	@include media( $gridBreakpoint--md ) {
+		@include span-columns(8);
+	}
+
+	@include media( $gridBreakpoint--lg ) {
+		@include span-columns(7);
+	}
+
+}
+
+// Content reverse
+.StandardCard-content--reverse {
+
+	@include span-columns(4);
+
+	@include media ($gridBreakpoint--md ) {
+		@include span-columns(8);
+	}
+
+	@include media( $gridBreakpoint--lg ) {
+		@include span-columns(7);
+		@include omega;
+		float: right;
+	}
+
+}
+
+// Content title
+.StandardCard-title {
+
+	font-size: $fontSize--h2--sm;
+	margin-bottom: rem(30px);
+
+	@include mdScreens() {
+		font-size: $fontSize--h2--md;
+	}
+
+	@include mdScreens() {
+		font-size: $fontSize--h2--lg;
+	}
+
+}
+
+// Media
+.StandardCard-media {
+
+	@include span-columns(5);
+
+	img {
+
+		@include mdScreens() {
+			display: inline-block;
+		}
+
+	}
+
+	@include media( $gridBreakpoint--md ) {
+		@include span-columns(8);
+		text-align: center;
+		margin-top: rem(30px);
+	}
+
+	@include media( $gridBreakpoint--lg ) {
+		@include span-columns(4);
+		text-align: center;
+		margin-top: rem(20px);
+	}
+
+}

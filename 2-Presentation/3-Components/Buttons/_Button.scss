@@ -1,0 +1,125 @@
+
+// ---------- Button ---------- //
+
+// Base
+.Button {
+
+	display: block;
+	border: hidden;
+	margin: 0 auto;
+	border-radius: rem(7px);
+	text-align: center;
+	transition-duration: 0.5s;
+
+	// Inner link
+	& a {
+
+		display: block;
+		text-decoration: none;
+		color: palette( white );
+		font-weight: 400;
+		font-family: $fontFamily--a;
+
+		&:hover {
+			color: palette( white );
+			text-decoration: none;
+		}
+
+	}
+
+	@include mdScreens() {
+		max-width: 45vw;
+	}
+
+	@include lgScreens() {
+		display: inline-block;
+		border: 0;
+	}
+
+}
+
+
+// ---------- Button size ---------- //
+
+// Extra large
+.Button--XL {
+
+	font-size: $fontSize--h3--sm;
+
+	a {
+		padding: rem(15px) rem(30px) rem(15px) rem(30px);
+	}
+
+	@include mdScreens() {
+		font-size: $fontSize--h3--md;
+	}
+
+	@include lgScreens() {
+		font-size: $fontSize--h3--lg;
+	}
+
+}
+
+// Medium
+.Button--M {
+
+	font-size: $fontSize--base--sm;
+
+	a {
+		padding: rem(13px) rem(25px) rem(13px) rem(25px);
+	}
+
+	@include mdScreens() {
+		font-size: $fontSize--base--md;
+	}
+
+	@include lgScreens() {
+		font-size: $fontSize--base--lg;
+	}
+
+}
+
+
+// ---------- Button colors ---------- //
+
+// Success
+.Button--success {
+
+	border-bottom: 5px solid palette( green, dark );
+	background-color: palette( green );
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: palette( green, dark );
+	}
+
+}
+
+// Warning
+.Button--warning {
+
+	border-bottom: 4px solid palette( red, dark );
+	background-color: palette( red );
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: palette( red, dark );
+	}
+
+}
+
+// CTA
+.Button--cta {
+
+	border-bottom: 4px solid palette( orange, dark );
+	background-color: palette( orange );
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: palette( orange, dark );
+	}
+
+}

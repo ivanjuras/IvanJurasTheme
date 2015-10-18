@@ -1,0 +1,60 @@
+
+{# ---------- Core top ---------- #}
+
+<!doctype html>
+<html lang="{{ site.language_attributes }}">
+<head>
+	<title>{% if wp_title %}{{ wp_title }}{% else %}{{ site.name }}{% endif %}</title>
+	<meta charset="{{ site.charset }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="description" content="{{ site.description }}">
+	{{ function( 'wp_head' ) }}
+</head>
+<body class="{{ body_class }}">
+
+
+{# ---------- Core header ---------- #}
+
+{% block header %}
+<section id="top" class="Wrapper Wrapper--header">
+
+	{# Header #}
+	<div class="Row--b">
+		<div class="Column--12">
+			{% include 'snippet-NavbarTop.twig' %}
+		</div>
+	</div>
+
+</section>
+{% endblock %}
+
+
+{# ---------- Core content ---------- #}
+
+{% block content %}
+{% endblock %}
+
+
+{# ---------- Core footer ---------- #}
+
+{% block footer %}
+<section class="Container Container--footer">
+
+	<div class="Row--b">
+
+		<div class="Column--12 u-centerText">
+			<p>&copy; {{ now|date( 'Y' ) }}. All rights reserved.</p>
+		</div>
+
+	</div>
+
+</section>
+{% endblock %}
+
+
+{# ---------- Core bot ---------- #}
+
+<a class="ToTopButton" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a>
+{{ function('wp_footer') }}
+</body>
+</html>

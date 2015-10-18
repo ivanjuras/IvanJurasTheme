@@ -1,0 +1,28 @@
+
+// No side paddings on small devices
+.u-sm-noSidePaddings {
+
+	@include smScreensOnly() {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+}
+
+// Bigger top and bottom paddings
+.u-biggerTopBotPaddings {
+
+	padding-top: rem(20px);
+	padding-bottom: rem(20px);
+
+	@include mdScreens() {
+		padding-top: rem(30px);
+		padding-bottom: rem(30px);
+	}
+
+	@include lgScreens() {
+		padding-top: rem(40px);
+		padding-bottom: rem(40px);
+	}
+
+}

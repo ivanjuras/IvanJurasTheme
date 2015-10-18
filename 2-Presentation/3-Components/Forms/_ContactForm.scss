@@ -1,0 +1,67 @@
+
+// ---------- ContactForm ---------- //
+
+// Label
+label {
+
+	display: block;
+
+}
+
+// Text, email, url, textarea
+input[type="text"]:not(.SearchForm-field),
+input[type="email"],
+input[type="url"],
+textarea {
+
+	border-radius: rem(5px);
+	border: 1px solid palette( gray, light );
+	color: palette( black, base );
+	padding: rem(10px);
+	outline: 0;
+
+}
+
+// Radio, checkbox
+input[type="radio"],
+input[type="checkbox"] {
+
+	outline: 0;
+
+}
+
+// Textarea
+textarea {
+
+	width: 100%;
+
+}
+
+// Submit button
+input[type="submit"] {
+
+	font-size: $fontSize--base--sm;
+	font-family: $fontFamily--a;
+	padding: rem(13px) rem(25px) rem(13px) rem(25px);
+	border: 0;
+	border-radius: rem(7px);
+	border-bottom: 4px solid palette( red, dark );
+	background-color: palette( red );
+	color: palette( white );
+	outline: 0;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: palette( red, dark );
+	}
+
+	@include mdScreens() {
+		font-size: $fontSize--base--md;
+	}
+
+	@include lgScreens() {
+		font-size: $fontSize--base--lg;
+	}
+
+}

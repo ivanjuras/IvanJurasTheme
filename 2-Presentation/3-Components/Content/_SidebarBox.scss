@@ -1,0 +1,17 @@
+
+// ---------- SidebarBox ---------- //
+
+.SidebarBox {
+
+	padding: rem(20px);
+
+	@include mdScreens() {
+		border: 1px solid palette( gray, x-light );
+		padding: rem(40px);
+	}
+
+	h3 {
+		font-weight: 700;
+	}
+
+}

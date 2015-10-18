@@ -1,0 +1,193 @@
+
+// ---------- Root ---------- //
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+
+	-ms-overflow-style: none;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	overflow-style: none;
+	height: 100%;
+
+}
+
+body {
+
+	background: url('../../uploads/2015/09/my-bg.jpg');
+	color: palette( black, light );
+	font-family: $fontFamily--b;
+	font-size: $fontSize--base--sm;
+	height: 100%;
+
+	@include mdScreens() {
+		font-size: $fontSize--base--md;
+	}
+
+	@include lgScreens() {
+		font-size: $fontSize--base--lg;
+	}
+
+}
+
+
+// ---------- Headings ---------- //
+
+h1 {
+
+	color: palette( black, lightest );
+	font-size: $fontSize--h1--sm;
+	font-family: $fontFamily--a;
+	font-weight: 700;
+	letter-spacing: -0.1rem;
+	line-height: lineHeight( h1, sm );
+	margin: 0;
+	margin-bottom: rem(20px);
+
+	@include mdScreens() {
+		font-size: $fontSize--h1--md;
+		line-height: lineHeight( h1, md );
+	}
+
+	@include lgScreens() {
+		font-size: $fontSize--h1--lg;
+		line-height: lineHeight( h1, lg );
+	}
+
+}
+
+h2 {
+
+	color: palette( black, lightest );
+	font-size: $fontSize--h2--sm;
+	font-family: $fontFamily--a;
+	line-height: lineHeight( h2, sm );
+	font-weight: 700;
+	margin: 0 0 rem(20px) 0;
+
+	@include mdScreens() {
+		font-size: $fontSize--h2--md;
+		line-height: lineHeight( h2, md );
+	}
+
+	@include lgScreens() {
+		font-size: $fontSize--h2--lg;
+		line-height: lineHeight( h2, lg );
+	}
+
+}
+
+h3 {
+
+	color: palette( black, lightest );
+	font-size: $fontSize--h3--sm;
+	font-family: $fontFamily--a;
+	line-height: lineHeight( h3, sm );
+	font-weight: 400;
+	margin: 0 0 rem(20px) 0;
+
+	@include mdScreens() {
+		font-size: $fontSize--h3--md;
+		line-height: lineHeight( h3, md );
+	}
+
+	@include lgScreens() {
+		font-size: $fontSize--h3--lg;
+		line-height: lineHeight( h3, lg );
+	}
+
+}
+
+h4 {
+
+	color: palette( black, lightest );
+	font-size: $fontSize--h4--sm;
+	font-family: $fontFamily--a;
+	line-height: lineHeight( h4, sm );
+	margin: 0;
+
+	@include mdScreens() {
+		font-size: $fontSize--h4--md;
+		line-height: lineHeight( h4, md );
+	}
+
+	@include lgScreens() {
+		font-size: $fontSize--h4--lg;
+		line-height: lineHeight( h4, lg );
+	}
+
+}
+
+
+// ---------- Links ---------- //
+
+a {
+
+	color: palette( red );
+	text-decoration: underline;
+
+	&:hover {
+		color: palette( red, dark );
+	}
+
+}
+
+
+// ---------- Images ---------- //
+
+img {
+
+	display: block;
+	height: auto;
+	max-width: 100%;
+
+}
+
+
+// ---------- Paragraphs ---------- //
+
+p {
+
+	color: palette( black, light );
+	font-size: $fontSize--base--sm;
+	line-height: lineHeight( base, sm );
+	margin: 0 0 rem(30px) 0;
+
+	@include mdScreens() {
+		font-size: $fontSize--base--md;
+		line-height: lineHeight( base, md );
+	}
+
+	@include lgScreens() {
+		font-size: $fontSize--base--lg;
+		line-height: lineHeight( base, lg );
+	}
+
+}
+
+
+// ---------- Lists ---------- //
+
+ul,
+ol {
+
+	margin: 0;
+	padding-left: 0;
+	margin-left: rem(20px);
+	list-style-position: inside;
+	-webkit-padding-start: 0;
+	-ms-padding-start: 0;
+	-moz-padding-start: 0;
+
+}
+
+li {
+	
+	margin: 0;
+	margin-bottom: rem(30px);
+	line-height: lineHeight( base, sm );
+
+}

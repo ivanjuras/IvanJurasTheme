@@ -1,0 +1,25 @@
+
+// ---------- ContentBox ---------- //
+
+.ContentBox {
+
+	background: palette( white );
+	padding: rem(20px);
+
+	@include mdScreens() {
+		border: 1px solid palette( gray, x-light );
+		padding: rem(40px);
+	}
+
+	h1,
+	h2 {
+		font-weight: 700;
+	}
+
+}
+
+.ContentBox-title {
+
+	margin: 0 0 rem(40px) 0;
+
+}

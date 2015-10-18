@@ -1,0 +1,160 @@
+
+// ---------- Colors ---------- //
+
+// Base colors
+$black           : #000;
+$blue            : #5D9594;
+$green           : #90a34d;
+$gray            : #999;
+$lavender        : #c7a0cb;
+$orange          : #ee7600;
+$red             : #A52A2A;
+$white           : #fff;
+$yellow          : #f3c859;
+
+// Palettes
+$palettes: (
+
+	black: (
+		base     : $black,
+		light    : lighten( $black, 30% ),
+		x-light  : lighten( $black, 35% )
+	),
+
+	blue: (
+		x-dark   : darken( $blue, 20% ),
+		dark     : darken( $blue, 10% ),
+		base     : $blue,
+		light    : lighten( $blue, 15% )
+	),
+
+	green: (
+		x-dark   : darken( $green, 25% ),
+		dark     : darken( $green, 15% ),
+		base     : $green,
+		light    : lighten( $green, 15% ),
+		x-light  : lighten( $green, 30% )
+	),
+
+	gray: (
+		x-dark   : darken( $gray, 20% ),
+		dark     : darken( $gray, 10% ),
+		base     : $gray,
+		light    : lighten( $gray, 10% ),
+		x-light  : lighten( $gray, 30% ),
+		xx-light : lighten( $gray, 36% )
+	),
+
+	lavender: (
+		x-dark   : darken( $lavender, 20% ),
+		dark     : darken( $lavender, 10% ),
+		base     : $lavender,
+		light    : lighten( $lavender, 10% ),
+	),
+
+	orange: (
+		dark     : darken( $orange, 10% ),
+		base     : $orange,
+		light    : lighten( $orange, 15% )
+	),
+
+	red: (
+		dark     : darken( $red, 10% ),
+		base     : $red,
+		light    : lighten( $red, 15% )
+	),
+
+	white: (
+		base     : $white
+	),
+
+	yellow: (
+		dark     : darken( $yellow, 10% ),
+		base     : $yellow,
+		light    : lighten( $yellow, 15% )
+	)
+
+ );
+
+
+// ---------- Typography ---------- //
+
+// Font family
+$fontFamily--a     : 'Open Sans', sans-serif;
+$fontFamily--b     : 'Noto Serif', serif;
+
+// Line heights
+$lineHeights: (
+
+	base: (
+		lg   : em( 27.2px, 16px ),
+		md   : em( 27.2px, 16px ),
+		sm   : em( 27.2px, 16px )
+	),
+
+	h1: (
+		lg   : em( 50.4px, 48px ),
+		md   : em( 45px, 40px ),
+		sm   : em( 40px, 32px )
+	),
+
+	h2: (
+		lg   : em( 45px, 36px ),
+		md   : em( 40px, 32px ),
+		sm   : em( 29.5px, 26px )
+	),
+
+	h3: (
+		lg   : em( 35px, 28px ),
+		md   : em( 30px, 24px ),
+		sm   : em( 25px, 22px )
+	),
+
+	h4: (
+		lg   : em( 22.5px, 20px ),
+		md   : em( 22.5px, 20px ),
+		sm   : em( 22.5px, 20px )
+	)
+
+);
+
+
+// ---------- Grid widths ---------- //
+
+$gridWidth        : rem(960px);
+$gridWidth--full  : 100%;
+$gridWidth--small : rem(740px);
+
+
+// ---------- Breakpoints ---------- //
+
+$breakpoint--md    : rem(600px);
+$breakpoint--lg    : rem(960px);
+
+
+// ---------- Font sizes ---------- //
+
+// Base
+$fontSize--base--lg    : rem(16px);
+$fontSize--base--md    : rem(16px);
+$fontSize--base--sm    : rem(16px);
+
+// H1 size
+$fontSize--h1--lg      : rem(46px);
+$fontSize--h1--md      : rem(38px);
+$fontSize--h1--sm      : rem(30px);
+
+// H2 size
+$fontSize--h2--lg      : rem(32px);
+$fontSize--h2--md      : rem(28px);
+$fontSize--h2--sm      : rem(24px);
+
+// H3 size
+$fontSize--h3--lg      : rem(28px);
+$fontSize--h3--md      : rem(24px);
+$fontSize--h3--sm      : rem(22px);
+
+// H4 size
+$fontSize--h4--lg      : rem(20px);
+$fontSize--h4--md      : rem(20px);
+$fontSize--h4--sm      : rem(20px);

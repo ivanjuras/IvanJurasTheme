@@ -1,0 +1,43 @@
+
+// Navigation icons
+.fa-cog,
+.fa-edit,
+.fa-folder-open-o,
+.fa-bar-chart-o,
+.fa-envelope-o,
+.fa-pencil,
+.fa-bus {
+
+	padding-right: rem(10px);
+
+}
+
+// Social media icons
+.fa-google-plus,
+.fa-twitter,
+.fa-facebook,
+.fa-github {
+
+	padding-left: rem(50px);
+	font-size: rem(36px);
+
+}
+
+// Arrows
+.fa-caret-down {
+
+	display: none;
+	padding: rem(10px) 0 0 rem(15px);
+
+	@include lgScreens() {
+		display: inline-block;
+	}
+
+}
+
+.fa-caret-right {
+
+	display: inline-block;
+	padding: 0 0 0 rem(10px);
+
+}

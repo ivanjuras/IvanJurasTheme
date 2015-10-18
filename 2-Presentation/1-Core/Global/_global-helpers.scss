@@ -1,0 +1,66 @@
+
+// ---------- Functions ---------- //
+
+// Convert to rem
+@function rem( $target, $context: 16px ) {
+
+    @return ( $target / $context ) * 1rem;
+
+}
+
+// Convert to em
+@function em( $target, $context: 16px ) {
+
+    @return ( $target / $context ) * 1em;
+
+}
+
+// Get color from $palettes
+@function palette( $palette, $shade: base ) {
+
+    @return map-get(
+        map-get( $palettes, $palette ),
+        $shade
+    );
+
+}
+
+// Get color from a palette
+@function lineHeight( $fontSize, $breakpoint: base ) {
+
+    @return map-get(
+        map-get( $lineHeights, $fontSize ),
+        $breakpoint
+    );
+
+}
+
+
+// ---------- Mixins ---------- //
+
+// Medium screens media query
+@mixin smScreensOnly( $break: $breakpoint--md ) {
+
+    @media ( max-width: $breakpoint--md ) {
+        @content;
+    }
+
+}
+
+// Medium screens media query
+@mixin mdScreens( $break: $breakpoint--md ) {
+
+    @media ( min-width: $breakpoint--md ) {
+        @content;
+    }
+
+}
+
+// Medium screens media query
+@mixin lgScreens( $break: $breakpoint--lg ) {
+
+    @media ( min-width: $breakpoint--lg ) {
+        @content;
+    }
+
+}

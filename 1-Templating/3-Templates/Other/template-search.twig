@@ -1,0 +1,38 @@
+{% extends 'core-template.twig' %}
+
+
+{# ---------- Content block ---------- #}
+
+{% block content %}
+{# {{ dump( posts ) }} #}
+
+<div class="Wrapper Wrapper--M u-sm-noSidePaddings">
+	<div class="Row--c">
+
+		<section class="Column--12">
+
+			<div class="ContentBox">
+				{% if posts %}
+					<div class="u-marginBottom">
+						{% include 'snippet-SearchForm.twig' %}
+					</div>
+					<p>
+						Your search results for <strong>&ldquo;{{ function('get_search_query') }}&rdquo;</strong> :
+					</p>
+					{% for post in posts %}
+						{% include 'snippet-PostSnippet.twig' %}
+					{% endfor %}
+				{% else %}
+					<p>
+						Sorry, I haven't found anything that contains <strong>&ldquo;{{ function('get_search_query') }}&rdquo;</strong>. Try writing something better below. Come on, you can do it.
+					</p>
+					{% include 'snippet-SearchForm.twig' %}
+				{% endif %}
+			</div>
+
+		</section>
+
+	</div>
+</div>
+
+{% endblock %}

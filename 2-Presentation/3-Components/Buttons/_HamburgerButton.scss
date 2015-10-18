@@ -1,0 +1,35 @@
+
+// ---------- Hamburger button ---------- //
+
+.HamburgerButton {
+
+	float: right;
+	font-family: $fontFamily--a;
+	border: 1px solid palette( grey, light );
+	cursor: pointer;
+	display: inline-block;
+	margin-top: rem(6px);
+	padding: rem(5px);
+	transition: background 0.5s, color 0.5s;
+
+	&:active,
+	&:hover {
+		background: palette( red, light );
+		color: palette( white );
+	}
+	&:hover .fa-bars {
+		color: palette( white );
+		transition: color 0.5s;
+	}
+
+	.fa-bars {
+		padding-left: rem(5px);
+		font-size: $fontSize--base--lg;
+		color: palette( grey, dark );
+	}
+
+	@include lgScreens() {
+		display: none;
+	}
+
+}

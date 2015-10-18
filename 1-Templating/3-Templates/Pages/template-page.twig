@@ -1,0 +1,27 @@
+{% extends 'core-template.twig' %}
+
+
+{# ---------- Content block ---------- #}
+
+{% block content %}
+
+<div class="Wrapper Wrapper--M u-sm-noSidePaddings">
+
+	<div class="Row--c">
+
+		<div class="Column--12">
+
+			<section class="ContentBox">
+				<h1 class="ContentBox-title">{{ post.title }}</h1>
+				<article class="ContentBox-content">
+					{{ post.content }}
+				</article>
+			</section>
+
+		</div>
+
+	</div>
+
+</div>
+
+{% endblock %}

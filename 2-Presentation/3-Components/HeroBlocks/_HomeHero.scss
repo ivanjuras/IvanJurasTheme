@@ -1,0 +1,46 @@
+
+// ---------- Hero block ---------- //
+
+// Base
+.HomeHero {
+
+	
+
+}
+
+// Headline
+.HomeHero-headline {
+
+	font-weight: 300;
+	text-align: center;
+
+	@include mdScreens() {
+		margin: 0 0 rem(30px) 0;
+	}
+
+	@include lgScreens() {
+		margin: 0 0 rem(40px) 0;
+	}
+
+}
+
+// Photo
+.HomeHero-photo {
+
+	margin: 0 0 rem(20px) 0;
+
+	img {
+		border: 1px solid palette( gray, x-light );
+		border-radius: 50%;
+		margin: 0 auto;
+	}
+
+	@include mdScreens() {
+		margin: 0 0 rem(30px) 0;
+	}
+
+	@include lgScreens() {
+		margin: 0 0 rem(40px) 0;
+	}
+
+}

@@ -1,0 +1,61 @@
+
+// ---------- Wrapper ---------- //
+
+// Base
+.Wrapper {
+
+	display: block;
+	position: relative;
+	padding-left: rem(20px);
+	padding-right: rem(20px);
+
+}
+
+
+// ---------- Wrapper sizes ---------- //
+
+// Header
+.Wrapper--header {
+
+	padding: 0;
+	border-bottom: 1px solid palette( gray, x-light );
+
+}
+
+// Large
+.Wrapper--L {
+
+	border-bottom: 1px solid palette( gray, x-light );
+	padding-top: rem(40px);
+	padding-bottom: rem(40px);
+
+	@include mdScreens() {
+		padding-top: rem(60px);
+		padding-bottom: rem(60px);
+	}
+
+	@include lgScreens() {
+		padding-top: rem(80px);
+		padding-bottom: rem(80px);
+	}
+
+}
+
+// Medium
+.Wrapper--M {
+
+	border-bottom: 1px solid palette( gray, x-light );
+	padding-top: rem(20px);
+	padding-bottom: rem(20px);
+
+	@include mdScreens() {
+		padding-top: rem(40px);
+		padding-bottom: rem(40px);
+	}
+
+	@include lgScreens() {
+		padding-top: rem(60px);
+		padding-bottom: rem(60px);
+	}
+
+}

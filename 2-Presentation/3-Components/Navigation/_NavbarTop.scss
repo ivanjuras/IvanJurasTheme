@@ -1,0 +1,103 @@
+
+// ---------- NavbarTop component ---------- //
+
+// Base
+.NavbarTop {
+	
+	@include clearfix();
+
+	img {
+		display: inline-block;
+	}
+
+	ul {
+		margin-left: 0px;
+	}
+
+}
+
+// Logo block
+.NavbarTop-logoBlock {
+
+	display: block;
+	padding: rem(10px) rem(20px) rem(10px) rem(20px);
+
+	@include lgScreens() {
+		float: left;
+		padding-left: 0;
+	}
+
+}
+
+// Menu block
+.NavbarTop-menuBlock {
+
+	display: none;
+	margin-left: 0;
+	transition: max-width 1s;
+
+	ul {
+		list-style-type: none;
+	}
+
+	@include lgScreens() {
+		display: block;
+		float: right;
+		padding-top: rem(12px);
+	}
+
+}
+
+// Menu item
+.NavbarTop-menuItem {
+
+	margin-bottom: 0;
+	border-bottom: 1px solid palette( gray, x-light );
+	font: 400 $fontSize--base--sm $fontFamily--a;
+	text-align: center;
+
+	&:first-of-type {
+		border-top: 1px solid palette( gray, x-light );
+	}
+	&:last-of-type {
+		border-bottom: hidden;
+	}
+
+	@include lgScreens() {
+
+		float: left;
+		display: flex;
+		align-items: center;
+		// height: rem(75px);
+		border: 0;
+		padding: 0 rem(45px) 0 rem(45px);
+
+		&:first-of-type {
+			border-top: 0;
+			padding-left: 0;
+			margin-left: auto;
+		}
+		&:last-of-type {
+			padding-right: 0;
+		}
+
+	}
+
+}
+
+// Menu link
+.NavbarTop-menuLink {
+
+	display: inline-block;
+	padding: rem(12px) 0;
+	color: palette( black );
+	transition: color 0.2s ease-in;
+	text-decoration: none;
+
+	&:hover,
+	&:active {
+		color: palette( red, light );
+		text-decoration: none;
+	}
+
+}
